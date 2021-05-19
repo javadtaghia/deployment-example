@@ -1,0 +1,155 @@
+.welcome {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(240deg 39% 20%);
+}
+
+.provideDesign {
+  background: hsl(240deg 39% 60%);
+  display: flex;
+  width: 400px;
+  flex-direction: column;
+  color: #fff;
+  border-radius: 6px;
+  padding: 10px;
+}
+
+.provideDesign h1 {
+  padding: 10px 0 15px;
+}
+
+.provideDesign label {
+  font-size: 1.1rem;
+  padding-bottom: 8px;
+}
+
+.provideDesign input {
+  width: 100%;
+  padding: 8px;
+  font-size: 1rem;
+  border-radius: 3px;
+  color: #fff;
+  background: hsl(240deg 39% 70%);
+  border: 2px solid hsl(240deg 39% 40%);
+}
+
+.provideDesign input::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.provideDesign button {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  background: hsl(240deg 39% 40%);
+  border-radius: 3px;
+  border: none;
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+.designViewer {
+  display: flex;
+  height: 100%;
+}
+
+.leftSidebar {
+  display: flex;
+  flex-direction: column;
+  width: 340px;
+  background: hsl(240deg 39% 20%);
+  color: #fff;
+}
+
+.headline {
+  padding: 15px;
+  font-size: 1.4rem;
+  border-bottom: 2px solid hsl(240deg 39% 60%);
+}
+
+.pages {
+  flex: 0.2;
+}
+
+.artboards {
+  flex: 0.8;
+  margin-bottom: 10px;
+}
+
+.listItems {
+  display: flex;
+  flex-direction: column;
+  border-bottom: 2px solid hsl(240deg 39% 60%);
+  overflow: hidden;
+}
+
+.noBorder {
+  border-bottom: none;
+}
+
+.listItems h2 {
+  padding: 15px;
+}
+
+.listItems ul {
+  list-style: none;
+  overflow: scroll;
+}
+
+.listItem {
+  cursor: pointer;
+  padding: 10px 15px;
+  transition: background 0.4s;
+}
+
+.listItem:hover {
+  background: hsl(240deg 39% 60%);
+}
+
+.listItemActive,
+.listItemActive:hover {
+  background: hsl(240deg 39% 50%);
+}
+
+.mainContent {
+  position: relative;
+  display: flex;
+  overflow: scroll;
+  width: 100%;
+  height: 100%;
+  background-color: #666699;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100'%3E%3Cg fill-rule='evenodd'%3E%3Cg fill='%239C92AC' fill-opacity='0.4'%3E%3Cpath opacity='.5' d='M96 95h4v1h-4v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4h-9v4h-1v-4H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15v-9H0v-1h15V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h9V0h1v15h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9h4v1h-4v9zm-1 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm9-10v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-10 0v-9h-9v9h9zm-9-10h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9zm10 0h9v-9h-9v9z'/%3E%3Cpath d='M6 5V0H5v5H0v1h5v94h1V6h94V5H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
+}
+
+.pageContent {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  right: 20px;
+  bottom: 0;
+  overflow: scroll;
+}
+
+.artboard {
+  position: absolute;
+  padding: 10px;
+}
+
+.artboard img {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 8px 24px;
+  background: #fff;
+}
+
+.artboard h3 {
+  color: #fff;
+  font-size: 1rem;
+  padding-bottom: 5px;
+}
+
+.artboardActive img {
+  box-shadow: rgb(255, 255, 255) 0px 8px 24px;
+}
